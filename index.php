@@ -19,7 +19,6 @@ img {
   margin-left: auto;
   position: relative;
   margin-right: auto;
-
   max-width: 500px;
   height: auto;
   width: auto;
