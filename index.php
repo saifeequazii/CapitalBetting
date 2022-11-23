@@ -79,7 +79,7 @@ h1 {
 </style>
 </head>
 <body>
-<form action="welcome.php" method="post">
+<form action="dashboard.php" method="post">
 <h2 style="color:white">WELCOME TO CAPITAL BETTING BOT</h2>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
