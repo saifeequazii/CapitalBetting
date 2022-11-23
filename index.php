@@ -21,7 +21,7 @@ img {
   margin-right: auto;
 
   max-width: 500px;
-  height: 100px;
+  height: auto;
   width: auto;
   border: solid black;
 }
