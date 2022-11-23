@@ -20,7 +20,7 @@ img {
   position: relative;
   margin-right: auto;
 
-  max-width: auto;
+  max-width: 500px;
   height: auto;
   width: auto;
   border: solid black;
