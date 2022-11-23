@@ -13,7 +13,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-
 img {
   display: block;
   margin-left: auto;
@@ -74,19 +73,23 @@ div {
   padding: 20px;
 }
 h1 {
-  font-size: 10px;
+  font-size: 20px;
   text-align: center;
 }
 </style>
 </head>
 <body>
-<form action="welcome.php" method="post">
-<h2 style="color:white">WELCOME TO CAPITAL BETTING BOT</h2>
+<form action="timestamp_reg.php" method="post">
+<h2 style="color:white">REGISTER FOR CAPITAL BETTING BOT</h2>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
-<input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
-<input type="text" name="password" placeholder="PASSWORD" style="border-radius: 10px;"  >
+<input type="text" name="fname" placeholder="FIRST NAME" style="border-radius: 10px;"  >
+<input type="text" name="lname" placeholder="LAST NAME" style="border-radius: 10px;"  >
 
-<input type="submit" value="LOGIN">
+<input type="text" name="uname" placeholder="USERNAME" style="border-radius: 10px;"  >
+
+<input type="text" name="pword" placeholder="PASSWORD" style="border-radius: 10px;"  >
+<input type="text" name="mnumber" placeholder="MOBILE NO" style="border-radius: 10px;"  >
+<input type="submit" value="REGISTER">
 </form>
 
 
@@ -95,25 +98,6 @@ h1 {
 
      
     
-   <input type="submit" value="LOGIN" onclick="getVal()">
-
-     <input type="submit" value="REGISTER" onclick="location.href='register.php'" >
-     <input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='signup.html'">
-  <input type="submit" name="b1" value=" WhatsApp us (Live Assessment)"
- onclick="location.href='https://api.whatsapp.com/send?phone=13656016616'">
- 
- <input type="submit" name="b1" value="What is TRN id?"
- onclick="location.href='/upi/trn.html'">
-  <input type="submit" name="b1" value="SEE RECENT TRADES (TELEGRAM CHANNEL)" onclick="location.href='https://t.me/algo_Tradeing'">
- <input type="submit" name="b1" value="RESENT TRADEING RESULTS"
- onclick="location.href='result.html'">
- <input type="submit" name="b1" value="SERVER LOG"
- onclick="location.href='/status/log.html'">
-  <input type="submit" name="b1" value="TRY ONE TRADE  FOR FREE NOW"
- onclick="location.href='/try.html'">
-<a href="/">
-  
-<a href="/">
   </form>
 </div>
 
