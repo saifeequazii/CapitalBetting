@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+    php-apache-environment:
+        container_name: main
+        image: dexterquazi/capitalbeting.com
+        depends_on:
+            - db
+        volumes:
+            - /home/ec2-user/capitalbeting.com/:/var/www/html/
+        ports:
+            - 80:80
+            - 443:443
+    db:
+      image: dexterquazi/redis
+      ports:
+        - '6379:6379'
+
