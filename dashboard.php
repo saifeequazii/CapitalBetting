@@ -119,6 +119,6 @@ h1 {
   font-size: 20px;
   text-align: center;
   font-family:verdana
-  color:white
+  color: white
 }
 </style>
