@@ -5,7 +5,7 @@
 <body>
 <form action="index.php" method="post">
 
-<body style="background-color:white;">
+<body style="background-color:black;">
 <h2 style="color:white">DASHBOARD</h2>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
