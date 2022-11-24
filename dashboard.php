@@ -44,8 +44,7 @@ else {
           else{
             echo <<< END_OF_TEXT
             <h1>Invalid credentials </h1> <h1>$db_name</h1>
-            <h1>lots of text...
-        many lines possible, with any indentation, until the closing delimiter...</h1>
+            <h1>please check your credentials before entering</h1>
         END_OF_TEXT;
           }
 
