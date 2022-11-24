@@ -118,7 +118,7 @@ div {
 h1 {
   font-size: 20px;
   text-align: center;
-  font-family:verdana
-  color: white
+  font-family:verdana;
+  color: white;
 }
 </style>
