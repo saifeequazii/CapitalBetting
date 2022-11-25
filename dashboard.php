@@ -101,8 +101,6 @@ h2 {text-align: center;
   margin-left: auto;
   position: relative;
   margin-right: auto;
-  max-width: 150px;
-  height: 150px;
   width: auto;
   border: solid black;
   text-align: center;
