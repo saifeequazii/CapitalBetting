@@ -37,7 +37,7 @@ else {
             $element = print_r($redis->get("element_".$_POST["name"]),true);
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
-            <h1>WELCOME </h1> <h1>name</h1>
+            <h1>WELCOME </h1> <h1>$name</h1>
             <h1>Current Earning rate:- $element / min</h1>
             <h1></h1>
         END_OF_TEXT;
