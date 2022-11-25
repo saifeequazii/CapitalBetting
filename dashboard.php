@@ -104,7 +104,7 @@ h2 {text-align: center;
   width: auto;
   border: solid black;
   text-align: center;
-  font-family: "Sofia", sans-serif;
+  
   font-size: 20px;}
 input[type=text], select {
   width: 68%;
