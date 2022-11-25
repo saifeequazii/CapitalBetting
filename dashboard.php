@@ -38,7 +38,7 @@ else {
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
             <h1>WELCOME </h1>
-            <h1>Current Earning rate:- $element / min</h1> <button type="button">ACTIVATE NOW!</button>
+            <h1>Current Earning rate:- $element / min</h1> <submit type="button">ACTIVATE NOW!</submit>
             <h1></h1>
         END_OF_TEXT;
             
@@ -96,16 +96,7 @@ img {
 h2 {text-align: center;
     font-family: "Sofia", sans-serif;
  font-size: 20px;}
- button {
-  display: block;
-  margin-left: auto;
-  position: relative;
-  margin-right: auto;
-  width: auto;
-  border: solid orange;
-  text-align: center;
-  
-  font-size: 20px;}
+
 input[type=text], select {
   width: 68%;
   align-self: center;
