@@ -28,7 +28,7 @@ else {
           $redis->connect('db', 6379); 
           $element = print_r($redis->get($_POST["name"]),true)
           $db_name = print_r($redis->get($_POST["name"]),true)
-          $db_name = print_r($redis->get($_POST["name"]),true)
+          $db_name = print_r($redis->get($_POST["uname"]),true)
           if ($db_name == $_POST["password"]){
 
             
