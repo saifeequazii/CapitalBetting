@@ -94,7 +94,7 @@ h1 {
 
      
     
-   <input type="submit" value="LOGIN" onclick="getVal()">
+   <input type="submit" value="ANAM" onclick="getVal()">
 
      <input type="submit" value="REGISTER" onclick="location.href='register.php'" >
      <input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='signup.html'">
