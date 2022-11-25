@@ -38,8 +38,7 @@ else {
             echo <<< END_OF_TEXT
             <h1>WELCOME </h1> <h1>$db_name</h1>
             <h1>Current Earning rate:- $element / min</h1>
-            <h1>lots of text...
-        many lines possible, with any indentation, until the closing delimiter...</h1>
+            <h1></h1>
         END_OF_TEXT;
             
           }
