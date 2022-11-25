@@ -45,6 +45,8 @@ else {
             echo <<< END_OF_TEXT
             <h1>Invalid credentials </h1> 
             <h1>please check your credentials before entering</h1>
+            <h1> </h1>
+            <h1>lets go to home in 5 second</h1>
         END_OF_TEXT;
             #usleep(5);
             #header("Location: index.php");
