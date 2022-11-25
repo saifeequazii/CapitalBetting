@@ -38,7 +38,7 @@ else {
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
             <h1>WELCOME </h1>
-            <h1>Current Earning rate:- $element / min</h1> <button type="button">ACTIVATE!</button>
+            <h1>Current Earning rate:- $element / min</h1> <button type="button">ACTIVATE NOW!</button>
             <h1></h1>
         END_OF_TEXT;
             
