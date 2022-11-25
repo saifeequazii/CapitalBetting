@@ -29,11 +29,11 @@ else {
           
           $db_name = print_r($redis->get($_POST["name"]),true);
           if ($db_name == $_POST["password"]){
-            $element = print_r($redis->get("element_",$_POST["name"]),true)
+            
 
             
             
-            $element = print_r($redis->get("name_",$_POST["name"]),true);
+            $element = print_r($redis->get("name_".$_POST["name"]),true);
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
             <h1>WELCOME </h1> <h1>$db_name</h1> <h1>$element</h1>
