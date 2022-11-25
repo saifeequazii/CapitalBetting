@@ -37,9 +37,10 @@ else {
             $element = print_r($redis->get("element_".$_POST["name"]),true);
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
-            <h1>WELCOME </h1>
-            <h1>Current Earning rate:- $element / min</h1> <submit type="button">ACTIVATE NOW!</submit>
-            <h1></h1>
+            <h1>WELCOME $name</h1>
+            <h1>Current Earning rate:- $element / min</h1><input type="submit" value="ACTIVATE NOW" onclick="location.href='register.php'" >
+            <h1>Betting on: Not linked</h1>
+            <input type="submit" value="LINK BETTING ENGINE" onclick="location.href='register.php'" >
         END_OF_TEXT;
             
           }
@@ -96,7 +97,16 @@ img {
 h2 {text-align: center;
     font-family: "Sofia", sans-serif;
  font-size: 20px;}
-
+ button {
+  display: block;
+  margin-left: auto;
+  position: relative;
+  margin-right: auto;
+  width: auto;
+  border: solid orange;
+  text-align: center;
+  
+  font-size: 20px;}
 input[type=text], select {
   width: 68%;
   align-self: center;
@@ -114,7 +124,7 @@ input[type=text], select {
   margin-bottom:0%;
 }
 input[type=submit] {
-  width: 70%;
+  width: 20%;
   align-self: center;
   background-color: #ffe552;
   color: rgb(0, 0, 0);
@@ -124,6 +134,7 @@ input[type=submit] {
   border-radius: 14px;
   cursor: pointer;
   margin-left:auto;
+  border: solid white;
   margin-right:auto;
   display:block;
   margin-top:1%;
