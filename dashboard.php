@@ -96,6 +96,9 @@ img {
 h2 {text-align: center;
     font-family: "Sofia", sans-serif;
  font-size: 20px;}
+ button {text-align: center;
+    font-family: "Sofia", sans-serif;
+ font-size: 20px;}
 input[type=text], select {
   width: 68%;
   align-self: center;
