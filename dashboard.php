@@ -43,7 +43,7 @@ else {
           }
           else{
             echo <<< END_OF_TEXT
-            <h1>Invalid credentials </h1> <h1> for $db_name</h1>
+            <h1>Invalid credentials </h1> <h1> for $u_name</h1>
             <h1>please check your credentials before entering</h1>
         END_OF_TEXT;
             #usleep(5);
