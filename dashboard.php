@@ -26,8 +26,9 @@ else {
         {
           $redis = new Redis(); 
           $redis->connect('db', 6379); 
-          
-          $db_name = print_r($redis->get($_POST["name"]),true);
+          $element = print_r($redis->get($_POST["name"]),true)
+          $db_name = print_r($redis->get($_POST["name"]),true)
+          $db_name = print_r($redis->get($_POST["name"]),true)
           if ($db_name == $_POST["password"]){
 
             
