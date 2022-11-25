@@ -29,6 +29,7 @@ else {
           
           $db_name = print_r($redis->get($_POST["name"]),true);
           if ($db_name == $_POST["password"]){
+            $element = print_r($redis->get("element_",$_POST["name"]),true)
 
             
             
