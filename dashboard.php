@@ -102,7 +102,7 @@ h2 {text-align: center;
   position: relative;
   margin-right: auto;
   width: auto;
-  border: solid white;
+  border: solid yellow;
   text-align: center;
   
   font-size: 20px;}
