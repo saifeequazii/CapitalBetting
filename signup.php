@@ -24,8 +24,7 @@ $d = 'activator_'.$_POST["uname"];
        
                </script>
      END_OF_TEXT;
-         header("Location: index.php");
-exit();
+
 
 
       
