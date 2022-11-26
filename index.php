@@ -104,15 +104,6 @@ h1 {
  <input type="submit" name="b1" value="What is TRN id?"
  onclick="location.href='/upi/trn.html'">
   <input type="submit" name="b1" value="SEE RECENT TRADES (TELEGRAM CHANNEL)" onclick="location.href='https://t.me/algo_Tradeing'">
- <input type="submit" name="b1" value="RESENT TRADEING RESULTS"
- onclick="location.href='result.html'">
- <input type="submit" name="b1" value="SERVER LOG"
- onclick="location.href='/status/log.html'">
-  <input type="submit" name="b1" value="TRY ONE TRADE  FOR FREE NOW"
- onclick="location.href='/try.html'">
-<a href="/">
-  
-<a href="/">
   </form>
 </div>
 
