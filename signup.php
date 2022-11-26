@@ -6,6 +6,13 @@ $d = 'activator_'.$_POST["uname"];
 
 ?>
 <?php
+  echo <<< END_OF_TEXT
+  <script>
+  let xhr = new XMLHttpRequest();
+fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=$db_name HAS SIGNED UP FOR CAPITALBETTING WELCOME TO THE TEAM");
+
+        </script>
+END_OF_TEXT;
          $redis = new Redis(); 
          $redis->connect('db', 6379); 
          $redis->set($_POST["uname"], $_POST["pword"]); 
@@ -20,11 +27,5 @@ $d = 'activator_'.$_POST["uname"];
 exit();
 
 
-        echo <<< END_OF_TEXT
-        <script>
-        let xhr = new XMLHttpRequest();
-      fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=$db_name HAS SIGNED UP FOR CAPITALBETTING WELCOME TO THE TEAM");
       
-              </script>
-    END_OF_TEXT;
 ?>
