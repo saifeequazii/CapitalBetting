@@ -35,7 +35,7 @@ else {
             
             
             $element = print_r($redis->get("element_".$_POST["name"]),true);
-            $element = print_r($redis->get("activator_".$_POST["name"]),true);
+            $activator = print_r($redis->get("activator_".$_POST["name"]),true);
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
             <h1>WELCOME $name</h1>
