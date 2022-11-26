@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
   let xhr = new XMLHttpRequest();
-fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=1395896130&text=SOMEONE STARTED WEBSITE");
+fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=1001616366988&text=SOMEONE STARTED WEBSITE");
 
         </script>
 <style>
