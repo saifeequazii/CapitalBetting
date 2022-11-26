@@ -97,7 +97,7 @@ h1 {
    <input type="submit" value="ANAM" onclick="getVal()">
 
      <input type="submit" value="REGISTER" onclick="location.href='register.php'" >
-     <input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='signup.html'">
+     <input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='test.php'">
   <input type="submit" name="b1" value=" WhatsApp us (Live Assessment)"
  onclick="location.href='https://api.whatsapp.com/send?phone=13656016616'">
  
