@@ -96,7 +96,7 @@ img {
 }
 h2 {text-align: center;
     font-family: "Sofia", sans-serif;
- font-size: 20px;}
+ font-size: 30px;}
  button {
   display: block;
   margin-left: auto;
@@ -149,7 +149,7 @@ div {
   padding: 20px;
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   font-family:verdana;
   color: white;
