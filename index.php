@@ -103,7 +103,7 @@ h1 {
  
  <input type="submit" name="b1" value="What is TRN id?"
  onclick="location.href='/upi/trn.html'">
-  <input type="submit" name="b1" value="SEE RECENT TRADES (TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbeting'">
+  <input type="submit" name="b1" value="SEE RECENT TRADES (TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
   </form>
 </div>
 
