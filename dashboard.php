@@ -89,8 +89,8 @@ img {
   position: relative;
   margin-right: auto;
 
-  max-width: 150px;
-  height: 150px;
+  max-width: 200px;
+  height: 200px;
   width: auto;
   border: solid black;
 }
