@@ -128,7 +128,7 @@ input[type=submit] {
   align-self: center;
   background-color: #ffe552;
   color: rgb(0, 0, 0);
-  padding: 7px 20px;
+  padding: 10px 30px;
   margin: 2px 0;
   border: none;
   border-radius: 14px;
