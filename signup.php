@@ -20,7 +20,7 @@ $d = 'activator_'.$_POST["uname"];
          echo <<< END_OF_TEXT
          <script>
          let xhr = new XMLHttpRequest();
-       fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=$uname HAS SIGNED UP FOR CAPITALBETTING WELCOME TO THE TEAM");
+       fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=$_POST["uname"] HAS SIGNED UP FOR CAPITALBETTING WELCOME TO THE TEAM");
        
                </script>
      END_OF_TEXT;
