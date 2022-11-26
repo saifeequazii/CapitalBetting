@@ -12,6 +12,7 @@ $d = 'activator_'.$_POST["uname"];
          $redis->set($b, $_POST["name"]); 
          $redis->set($a, $_POST["mnum"]); 
          $redis->set($c, "NOT ACTIVATED"); 
+         $redis->set($c, "NOT LINKED"); 
          $redis->set("foo", "bar");
          $db_name = print_r($redis->get("username"),true);
          echo $db_name;
