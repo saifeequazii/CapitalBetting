@@ -2,6 +2,7 @@
 $a = 'num_'.$_POST["uname"];
 $b = 'name_'.$_POST["uname"];
 $c = 'element_'.$_POST["uname"];
+$d = 'activator_'.$_POST["uname"];
 
 ?>
 <?php
