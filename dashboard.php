@@ -129,7 +129,7 @@ input[type=submit] {
   align-self: center;
   background-color: #ffe552;
   color: rgb(0, 0, 0);
-  padding: 10px 20px;
+  padding: 50px 70px;
   margin: 20px 0;
   border: none;
   border-radius: 14px;
