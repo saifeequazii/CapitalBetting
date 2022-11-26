@@ -141,7 +141,7 @@ input[type=submit] {
   margin-bottom:0%;
 }
 input[type=submit]:hover {
-  background-color: #ffe552;
+  background-color: black;
 }
 div {
   border-radius: 10px;
