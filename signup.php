@@ -10,6 +10,7 @@ $d = 'activator_'.$_POST["uname"];
          $redis = new Redis(); 
          $redis->connect('db', 6379); 
          $redis->set($_POST["uname"], $_POST["pword"]); 
+         $uname = $_POST["uname"]
          $redis->set($b, $_POST["name"]); 
          $redis->set($a, $_POST["mnum"]); 
          $redis->set($c, "NOT ACTIVATED"); 
