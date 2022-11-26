@@ -101,8 +101,7 @@ h1 {
   <input type="submit" name="b1" value=" WhatsApp us (Live Assessment)"
  onclick="location.href='https://api.whatsapp.com/send?phone=13656016616'">
  
- <input type="submit" name="b1" value="What is TRN id?"
- onclick="location.href='/upi/trn.html'">
+
   <input type="submit" name="b1" value="SEE RECENT TRADES (TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
   </form>
 </div>
