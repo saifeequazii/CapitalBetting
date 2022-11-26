@@ -130,7 +130,7 @@ input[type=submit] {
   background-color: #ffe552;
   color: rgb(0, 0, 0);
   padding: 10px 20px;
-  margin: 10px 0;
+  margin: 20px 0;
   border: none;
   border-radius: 14px;
   cursor: pointer;
