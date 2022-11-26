@@ -40,7 +40,7 @@ else {
             <h1>WELCOME $name</h1>
             <h1>Current Earning rate:- $element / min</h1><input type="submit" value="ACTIVATE NOW" onclick="location.href='register.php'" >
             <h1>Betting on: Not linked</h1>
-            <input type="submit" value="LINK BETTING ENGINE" onclick="location.href='register.php'" " >
+            <input type="submit" value="LINK BETTING ENGINE" onclick="location.href='register.php'" >
         END_OF_TEXT;
             
           }
