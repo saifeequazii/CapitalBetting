@@ -124,7 +124,7 @@ input[type=text], select {
   margin-bottom:0%;
 }
 input[type=submit] {
-  width: 50px;
+  width: 100px;
   height: 100px;
   align-self: center;
   background-color: #ffe552;
