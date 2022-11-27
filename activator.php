@@ -2,7 +2,7 @@
 <html>
 <body>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
-<body style="background-color:white;">
+<body style="background-color:black;">
 <h2>ssajfkljs</h2>
 <input type="submit" value="500₹ For earning rate 2.25₹ per minuts validity 48 hours Account bal should be equal or more then 500" onclick="location.href='https://pmny.in/jrO38JLhd4On'" >
 <input type="submit" value="700₹ For earning rate 3.25₹ per minuts validity 48 hours Account bal should be equal or more then 700" onclick="location.href='https://pmny.in/ur43CJqhAAvv'" >
