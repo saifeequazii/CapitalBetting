@@ -107,7 +107,7 @@ h1 {
  onclick="location.href='https://api.whatsapp.com/send?phone=13656016616'">
  
 
-  <input type="submit" name="b1" value="SEE RECENT TRADES (TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
+  <input type="submit" name="b1" value="VIEW LIVE ACTIVITY(TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
   </form>
 </div>
 
