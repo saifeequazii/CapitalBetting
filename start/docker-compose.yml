@@ -12,8 +12,6 @@ services:
             - 443:443
 
     db:
-      depends_on:
-        - redis-primary
       image: dexterquazi/redis
       ports:
         - '6379:6379'
