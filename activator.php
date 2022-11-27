@@ -22,6 +22,12 @@ img {
   width: auto;
   border: solid black;
 }
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-family:verdana;
+  color: white;
+}
 input[type=submit] {
   width: 70%;
   align-self: center;
