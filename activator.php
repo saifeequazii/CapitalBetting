@@ -37,7 +37,7 @@ input[type=submit] {
   margin-top:1%;
   margin-bottom:0%;
   
-  
+  font-size: 25px;
   
 }
 
