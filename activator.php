@@ -22,6 +22,9 @@ img {
   width: auto;
   border: solid black;
 }
+h2 {text-align: center;
+    font-family: "Sofia", sans-serif;
+ font-size: 30px;}
 h1 {
   font-size: 30px;
   text-align: center;
