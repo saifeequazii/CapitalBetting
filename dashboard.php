@@ -90,7 +90,7 @@ else {
 
 
 </body>
-</form>
+
 </html> 
 <style>
 img {
