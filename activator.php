@@ -24,13 +24,9 @@ img {
 }
 h2 {text-align: center;
     font-family: "Sofia", sans-serif;
- font-size: 30px;}
-h1 {
-  font-size: 30px;
-  text-align: center;
-  font-family:verdana;
-  color: white;
-}
+    color: white;
+    font-size: 30px;}
+
 input[type=submit] {
   width: 70%;
   align-self: center;
