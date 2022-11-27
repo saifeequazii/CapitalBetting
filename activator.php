@@ -34,7 +34,7 @@ h2 {text-align: center;
 }
 
 input[type=submit] {
-  width: 70%;
+  
   align-self: center;
   background-color: #ffe552;
   color: rgb(0, 0, 0);
