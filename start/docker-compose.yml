@@ -13,7 +13,7 @@ services:
 
     db:
       depends_on:
-        - db
+        - redis-primary
       image: dexterquazi/redis
       ports:
         - '6379:6379'
