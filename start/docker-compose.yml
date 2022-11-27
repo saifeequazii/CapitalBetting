@@ -10,6 +10,15 @@ services:
         ports:
             - 80:80
             - 443:443
+    redis-primary:
+        image: docker.io/bitnami/redis:7.0
+    ports:
+         - '6379'
+    environment:
+        - REDIS_REPLICATION_MODE=master
+         - REDIS_PASSWORD=my_password
+         - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    
     db:
       image: dexterquazi/redis
       ports:
