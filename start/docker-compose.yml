@@ -12,6 +12,8 @@ services:
             - 443:443
 
     db:
+      depends_on:
+        - db
       image: dexterquazi/redis
       ports:
         - '6379:6379'
