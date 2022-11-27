@@ -14,3 +14,8 @@ services:
       image: docker.io/bitnami/redis:7.0
       ports:
         - '6379:6379'
+      environment:
+        - REDIS_REPLICATION_MODE=slave
+        - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+
+
