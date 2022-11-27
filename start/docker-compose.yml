@@ -20,4 +20,5 @@ services:
       environment:
       - REDIS_REPLICATION_MODE=master
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
-
+      volumes:
+      - 'redis_data:/bitnami/redis/data'
