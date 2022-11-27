@@ -20,12 +20,4 @@ services:
       environment:
       - REDIS_REPLICATION_MODE=master
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
-    redis-primary:
-      image: docker.io/bitnami/redis:7.0
-      ports:
-        - '6378:6379'
-      environment:
-      - REDIS_REPLICATION_MODE=master
-      - REDIS_PASSWORD=my_password
-      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
-    
+
