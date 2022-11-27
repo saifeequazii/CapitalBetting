@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <body style="background-color:black;">
 <h2>ssajfkljs</h2>
