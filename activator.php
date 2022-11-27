@@ -47,10 +47,8 @@ input[type=submit] {
   display:block;
   margin-top:1%;
   margin-bottom:0%;
-  
   font-size: 25px;
-  
-}
+  }
 
 input[type=submit]:hover {
   background-color: #ffe552;
