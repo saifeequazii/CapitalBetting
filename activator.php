@@ -3,15 +3,12 @@
 <body>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 
-
+style="background-color:black;
 
 
 </body>
 </html> 
 <style>
-body {
-    style="background-color:black;
-} 
 img {
   display: block;
   margin-left: auto;
