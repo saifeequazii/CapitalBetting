@@ -29,7 +29,7 @@ img {
 }
 h2 {text-align: center;
     font-family: "sans-serif";
-    color: white;
+    color: #ffe552;
     font-size: 30px;
 }
 
