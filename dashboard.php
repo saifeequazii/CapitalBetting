@@ -40,6 +40,11 @@ else {
             echo <<< END_OF_TEXT
             <h1>WELCOME $name</h1>
             <h1>Current Earning rate:- $element / min</h1><input type="submit" value="ACTIVATE NOW" onclick="location.href='/activator.php'" >
+            <script>
+            setTimeout(function() {
+                window.location.href="activator.php";
+            }, 1000);
+        </script>
             <h1>Betting on: $activator </h1>
             <input type="submit" value="LINK BETTING ENGINE" onclick="location.href='register.php'" >
         END_OF_TEXT;
