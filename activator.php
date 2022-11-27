@@ -6,7 +6,8 @@
 <input type="submit" value="500₹ For earning rate 2.25₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
 <input type="submit" value="700₹ For earning rate 3.25₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
 <input type="submit" value="1000₹ For earning rate 4₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
-<input type="submit" value="2000₹ For earning rate 8₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
+<input type="submit" value="2000₹ For earning rate 6₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
+<input type="submit" value="5000₹ For earning rate 25₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
 </body>
 </html> 
 <style>
