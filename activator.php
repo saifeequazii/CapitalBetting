@@ -28,7 +28,7 @@ img {
   border: solid black;
 }
 h2 {text-align: center;
-    font-family: "Sofia", sans-serif;
+    font-family: "sans-serif";
     color: white;
     font-size: 30px;
 }
