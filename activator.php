@@ -5,7 +5,7 @@
 <body style="background-color:black;">
 <input type="submit" value="500₹ For earning rate 2.25₹ per minuts validity 48 hours Account bal should be equal or more then 500" onclick="location.href='https://pmny.in/jrO38JLhd4On'" >
 <input type="submit" value="700₹ For earning rate 3.25₹ per minuts validity 48 hours Account bal should be equal or more then 700" onclick="location.href='https://pmny.in/ur43CJqhAAvv'" >
-<input type="submit" value="1000₹ For earning rate 4₹ per minuts validity 48 hours Account bal should be equal or more then 2000" onclick="location.href='register.php'" >
+<input type="submit" value="1000₹ For earning rate 4₹ per minuts validity 48 hours Account bal should be equal or more then 2000" onclick="location.href=''https://pmny.in/EI7XpotlLALu'" >
 <input type="submit" value="2000₹ For earning rate 6₹ per minuts validity 48 hours Account bal should be equal or more then 5000" onclick="location.href='register.php'" >
 <input type="submit" value="5000₹ For earning rate 25₹ per minuts validity 48 hours Account bal should be equal or more then 10000" onclick="location.href='register.php'" >
 </body>
