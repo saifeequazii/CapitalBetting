@@ -21,4 +21,27 @@ img {
   width: auto;
   border: solid black;
 }
+input[type=submit] {
+  width: 70%;
+  align-self: center;
+  background-color: #ffe552;
+  color: rgb(0, 0, 0);
+  padding: 7px 20px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:1%;
+  margin-bottom:0%;
+  
+  
+  
+}
+
+input[type=submit]:hover {
+  background-color: #ffe552;
+}
 </style>
