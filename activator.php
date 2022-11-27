@@ -2,8 +2,9 @@
 <html>
 <body>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
+<body style="background-color:black;">
 
-style="background-color:black;
+
 
 
 </body>
