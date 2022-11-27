@@ -3,7 +3,7 @@
 <body>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <body style="background-color:black;">
-
+<input type="submit" value="500 Rs For 1.25 Rs per minuts" onclick="location.href='register.php'" >
 </body>
 </html> 
 <style>
