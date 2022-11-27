@@ -25,7 +25,8 @@ img {
 h2 {text-align: center;
     font-family: "Sofia", sans-serif;
     color: white;
-    font-size: 30px;}
+    font-size: 30px;
+}
 
 input[type=submit] {
   width: 70%;
