@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<img src="src/logo.png" alt="Paris" style="width:50%;">
 
 
 
