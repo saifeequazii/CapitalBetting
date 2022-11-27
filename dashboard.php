@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-
 <html>
-
 <body>
-
-
 <body style="background-color:black;">
 <h2 style="color:white">DASHBOARD</h2>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
 <?php 
-
 if ($_POST["name"] == NULL) {
 echo "please enter username";
     }
