@@ -3,7 +3,7 @@
 <body>
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <body style="background-color:black;">
-<input type="submit" value="500₹ For 1.25₹ per minutes" onclick="location.href='register.php'" >
+<input type="submit" value="500₹ For earning rate 1.25₹ per minuts validity 48 hours" onclick="location.href='register.php'" >
 </body>
 </html> 
 <style>
