@@ -41,7 +41,7 @@ input[type=radio] {
     background: #555;
     color: #ffe552;
     font-size: 30px;
-    
+    align-self: center;  
 }
 input[type=submit] {
   align-self: center;
