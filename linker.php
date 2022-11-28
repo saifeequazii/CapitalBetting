@@ -8,7 +8,8 @@
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
 <h2>$i</h2>
-<input type="radio" id="age1" name="provider" value="betway">
+<label for="cig-stat" style="color:white"><input type="radio" name="cig-stat" value="0" id="never-smoke" required>Never Smoked Cigarettes</label><br>
+
 <label for="age1">betway</label><br>
 <h2>ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
 
