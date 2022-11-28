@@ -38,7 +38,7 @@ h2 {text-align: center;
     color: #ffe552;
     font-size: 30px;
 }
-input[type=radio] {
+label {
     text-align: center;
     background: #555;
     color: #ffe552;
