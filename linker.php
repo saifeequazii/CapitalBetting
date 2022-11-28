@@ -5,7 +5,7 @@
 <?php 
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
-
+$i
 END_OF_TEXT;
 ?>
 </body>
