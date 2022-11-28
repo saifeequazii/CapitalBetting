@@ -3,7 +3,7 @@
 <body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <?php 
-echo $_POST["username"];
+echo "username is $_POST["username"]";
 ?>
 </body>
 </html> 
