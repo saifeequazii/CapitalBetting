@@ -3,7 +3,9 @@
 <body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <?php 
+echo <<< END_OF_TEXT
 echo $_POST["username"];
+END_OF_TEXT;
 ?>
 </body>
 </html> 
