@@ -40,7 +40,7 @@ h2 {text-align: center;
 }
 label {
     text-align: center;
-    background: #555;
+    
     color: #ffe552;
     font-size: 30px;
     margin-left:auto;
