@@ -10,7 +10,7 @@ echo <<< END_OF_TEXT
 <h2>$i</h2>
 <label for="selector" style="color:white"><input type="radio" name="selector" value="betway" id="betway" required>betway</label><br>
 
-<label for="age1">betway</label><br>
+
 <h2>ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
 
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
