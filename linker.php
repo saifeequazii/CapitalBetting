@@ -3,7 +3,7 @@
 <body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <?php 
-<h2> $_POST["username"]</h2>
+<h2> echo "$_POST["username"]"</h2>
 ?>
 </body>
 </html> 
