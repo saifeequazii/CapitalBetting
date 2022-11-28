@@ -42,11 +42,8 @@ label {
     text-align: center;
     color: #ffe552;
     font-size: 30px;
-    margin-left:auto;
-    margin-right:auto;
-    align-self: center;  
-    margin-top: -1px;
-  vertical-align: middle;
+    margin-left:10px;
+
 }
 input[type=submit] {
   align-self: center;
