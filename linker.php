@@ -45,6 +45,8 @@ label {
     margin-left:auto;
     margin-right:auto;
     align-self: center;  
+    margin-top: -1px;
+  vertical-align: middle;
 }
 input[type=submit] {
   align-self: center;
