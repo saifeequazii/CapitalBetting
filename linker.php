@@ -12,7 +12,7 @@ echo <<< END_OF_TEXT
 
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
 <input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
-<input type="submit" value="LINKED" onclick="location.href='register.php'" >
+<input type="submit" value="LINK" onclick="location.href='register.php'" >
 END_OF_TEXT;
 ?>
 </body>
