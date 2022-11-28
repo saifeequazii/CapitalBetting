@@ -14,7 +14,6 @@
 <script>
   let xhr = new XMLHttpRequest();
 fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=SOMEONE STARTED CAPITALBETTING");
-
 </script>
 <style>
 img {
