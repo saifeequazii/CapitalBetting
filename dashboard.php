@@ -20,7 +20,7 @@ else {
         {
           $redis = new Redis(); 
           $redis->connect('db', 6379); 
-          
+          $nam = $_POST["name"];
           $db_name = print_r($redis->get($_POST["name"]),true);
           $name = print_r($redis->get("name_".$_POST["name"]),true);
           if ($db_name == $_POST["password"]){
@@ -33,7 +33,7 @@ else {
             #echo ' <h2 style="color:black">Welcome  </h2> '<i>$db_name</i> ;
             echo <<< END_OF_TEXT
             <h1>WELCOME $name</h1>
-            <h1>USERNAME $_POST["name"]</h1>
+            <h1>USERNAME $nam</h1>
             <h1>Current Earning rate:- $element / min</h1><input type="submit" value="upgrade plan" onclick="myFunction()" >
             <script>
             function myFunction() {
