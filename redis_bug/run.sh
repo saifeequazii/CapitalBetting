@@ -8,7 +8,7 @@ docker-compose up
 docker-compose down -d 
 sleep 1
 else
-
+docker-compose up
 fi
 
 done
