@@ -37,6 +37,7 @@ h2 {text-align: center;
     font-size: 30px;
 }
 input[type=radio] {
+    text-align: center;
     background: #555;
     color: #ffe552;
     font-size: 30px;
