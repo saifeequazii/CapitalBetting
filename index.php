@@ -3,11 +3,11 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <html>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <head>
-  <meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='cache-control' content='no-cache'>
 <meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,8 @@
   let xhr = new XMLHttpRequest();
 fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=SOMEONE STARTED CAPITALBETTING");
 
-        </script>
+</script>
 <style>
-
-
 img {
   display: block;
   margin-left: auto;
@@ -63,15 +61,10 @@ input[type=submit] {
   display:block;
   margin-top:1%;
   margin-bottom:0%;
-  
-  
-  
 }
-
 input[type=submit]:hover {
   background-color: #ffe552;
 }
-
 div {
   border-radius: 10px;
   background-color: #ffe552;
@@ -89,30 +82,17 @@ h1 {
 <img src="src/logo.png" alt="Paris" style="width:50%;">
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
 <input type="text" name="password" placeholder="PASSWORD" style="border-radius: 10px;"  >
-
 <input type="submit" value="LOGIN">
 </form>
-
-
-
- 
-
-     
-    
-   
-
-     <input type="submit" value="REGISTER" onclick="location.href='register.php'" >
-     <input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='test.php'">
-  <input type="submit" name="b1" value=" WhatsApp us (Live Assessment)"
- onclick="location.href='https://api.whatsapp.com/send?phone=13656016616'">
- 
-
-  <input type="submit" name="b1" value="VIEW LIVE ACTIVITY(TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
-  </form>
+<input type="submit" value="REGISTER" onclick="location.href='register.php'" >
+<input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='test.php'">
+<input type="submit" name="b1" value=" WhatsApp us (Live Assessment)"
+onclick="location.href='https://api.whatsapp.com/send?phone=13656016616'">
+<input type="submit" name="b1" value="VIEW LIVE ACTIVITY(TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
+</form>
 </div>
-
 <body style="background-color:black;">
- <h1 style="color:white">Greetings from Capital Betting</h1>
+<h1 style="color:white">Greetings from Capital Betting</h1>
 </html>
 <html>
 <head>
@@ -122,10 +102,8 @@ body {
   font-family: "Sofia", sans-serif;
 }
 </style>
- 
-
 <script type="text/javascript" src="func.js?updated=1234567890>"></script>
- <script>
+<script>
 cache.delete(request, {options}).then(function(found) {
   // your cache entry has been deleted if found
 });
@@ -135,7 +113,7 @@ caches.open('v1').then(function(cache) {
 
   });
 })
- </script>
+</script>
 
   
 
