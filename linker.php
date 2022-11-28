@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+<body style="background-color:black;">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <?php 
 $i = $_POST["username"];
