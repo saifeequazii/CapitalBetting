@@ -9,6 +9,7 @@ echo <<< END_OF_TEXT
 <h2>$i</h2>
 
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
+<input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
 END_OF_TEXT;
 ?>
 </body>
