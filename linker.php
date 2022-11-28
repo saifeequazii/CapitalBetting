@@ -2,9 +2,9 @@
 <html>
 <body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
-
-<h2>sss </h2>
+<?php 
+<h2> $_POST["username"]</h2>
+?>
 </body>
 </html> 
 <style>
