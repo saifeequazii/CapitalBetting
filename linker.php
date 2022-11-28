@@ -3,7 +3,7 @@
 <body>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <?php 
-$i = $_POST["username"];
+$i = echo $_POST["username"];
 echo <<< END_OF_TEXT
 
 END_OF_TEXT;
