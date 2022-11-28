@@ -7,7 +7,7 @@
 <?php 
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
-<h2>$i</h2>
+
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="betway" id="betway" required>betway</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="bet365" id="bet365" required>bet365</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="4raBet" id="4rabet" required>4rabet</label><br>
