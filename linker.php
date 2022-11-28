@@ -94,4 +94,33 @@ input[type=text], select {
   margin-top:1%;
   margin-bottom:0%;
 }
+
+label {
+  display: block;
+  color: #7d7d7d;
+}
+
+.floatBlock {
+  margin: 0 1.81em 0 0;
+}
+
+.labelish {
+	color:#7d7d7d;
+	margin: 0;
+}
+
+.paymentOptions {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	break-before: always;
+	margin: 0 0 3em 0;
+}
+
+#purchaseOrder {
+	margin: 0 0 2em 0;
+}
+
+
 </style>
