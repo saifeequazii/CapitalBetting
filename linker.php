@@ -8,6 +8,13 @@
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
 <h2>$i</h2>
+<input type="radio" id="age1" name="provider" value="betway">
+<label for="age1">betway</label><br>
+<input type="radio" id="age2" name="age" value="60">
+<label for="age2">31 - 60</label><br>  
+<input type="radio" id="age3" name="age" value="100">
+<label for="age3">61 - 100</label><br><br>
+
 <h2>ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
 
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
