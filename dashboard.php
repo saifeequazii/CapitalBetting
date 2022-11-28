@@ -45,7 +45,7 @@ else {
           
         </script>
             <h1>Betting on: $activator </h1>
-
+            <input type="hidden"  name="username" value=<?php echo $nam?>>
             <form action="linker.php" method="post">
             <input type="submit" value="LINK BETTING ENGINE" onclick="location.href='register.php'" >
             </form>
