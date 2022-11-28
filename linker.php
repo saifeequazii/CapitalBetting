@@ -39,7 +39,7 @@ input[type=radio] {
     font-family: "sans-serif";
     color: #ffe552;
     font-size: 30px;
-    name="cig-stat" style="color:white"
+    style="color:white"
 }
 input[type=submit] {
   align-self: center;
