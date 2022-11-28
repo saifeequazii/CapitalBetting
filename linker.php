@@ -36,10 +36,10 @@ h2 {text-align: center;
     font-size: 30px;
 }
 input[type=radio] {
-    font-family: "sans-serif";
+    background: #555;
     color: #ffe552;
     font-size: 30px;
-    color:white;
+    
 }
 input[type=submit] {
   align-self: center;
