@@ -6,5 +6,6 @@ if redis-cli -h ssh.capitalbeting.com set foo bar |grep read
 then
 docker-compose stop 
 docker-compose start -d 
+sleep 1
 fi
 done
