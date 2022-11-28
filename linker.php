@@ -7,7 +7,7 @@
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
 <h2>$i</h2>
-<h2>ENTER THE USERNAME AND PASSWORD OF YOUR FAVOURITE BETTING HOST PROVIDER</h2>
+<h2>ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
 
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
 <input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
