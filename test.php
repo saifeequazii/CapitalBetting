@@ -10,7 +10,7 @@
     
    }
    $redis->set("foo", "bar");
-   var_dump($redis->get("faizii"));
+   print_r($redis->get("faizii"));
    
 
    
