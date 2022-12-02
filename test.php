@@ -5,7 +5,7 @@
    echo "Connection to server sucessfully"; 
    //check whether server is running or not 
    echo "Server is running: ";
-   $redis->set("faizii", "Redis tutorial"); 
+   $redis->set("faizii", "CAPITALBETING"); 
    if ($redis->ping()) {
     echo "PONG";
    }
