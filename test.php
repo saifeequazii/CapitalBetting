@@ -7,7 +7,7 @@
    echo "Server is running: ";
    $redis->set("faizii", "CAPITALBETING"); 
    if ($redis->ping()) {
-    echo "PONG";
+    
    }
    $redis->set("foo", "bar");
    var_dump($redis->get("faizii"));
