@@ -6,7 +6,7 @@
 <body style="background-color:black;">
 <h2>(50₹ PLAN IS FOR TESTING ONLY)</h2>
 <h2>50₹ For earning rate 2.25₹ per minuts validity 1 minuts Account bal should be equal or more then 100</h2>
-<input type="submit" value="pay 500₹" onclick="location.href='https://pmny.in/jrO38JLhd4On'" >
+<input type="submit" value="pay 50₹" onclick="location.href='https://pmny.in/jrO38JLhd4On'" >
 <h2>500₹ For earning rate 2.25₹ per minuts validity 48 hours Account bal should be equal or more then 500</h2>
 <input type="submit" value="pay 500₹" onclick="location.href='https://pmny.in/jrO38JLhd4On'" >
 <h2>700₹ For earning rate 3.25₹ per minuts validity 48 hours Account bal should be equal or more then 700</h2>
