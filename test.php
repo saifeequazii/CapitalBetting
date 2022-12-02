@@ -4,7 +4,7 @@
    $redis->connect('db', 6379); 
    echo "Connection to server sucessfully"; 
    
-   echo "Server is running: ";
+   echo " Server is running: ";
    $redis->set("faizii", "CAPITALBETING"); 
    if ($redis->ping()) {
     
