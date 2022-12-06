@@ -14,6 +14,7 @@ echo <<< END_OF_TEXT
     <input type="radio" name="rads" value="3" />
     <input type="radio" name="rads" value="4" />
 </form>
+<span id="result"></span>
 <script>
 function myFunction() {
   var radVal = document.mainForm.rads.value;
