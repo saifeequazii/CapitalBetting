@@ -18,8 +18,9 @@ echo <<< END_OF_TEXT
 <input type="submit" value="LINK" onclick="myFunction()" >
 <script>
 function myFunction() {
-  var rates = document.getElementByName('selector').value;
-  if (document.getElementById('r1').checked) {
+  var selectedOption = $("input:radio[name=selector]:checked").val()
+
+  if (selectedOption == betway) {
     rate_value = document.getElementById('r1').value;
     let xhr = new XMLHttpRequest();
     fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
