@@ -16,12 +16,9 @@ echo <<< END_OF_TEXT
 </form>
 <span id="result"></span>
 <script>
-function myFunction() {
+document.mainForm.onclick = function(){
   var radVal = document.mainForm.rads.value;
   result.innerHTML = 'You selected: '+radVal;
-
- 
-  
 }
 </script>
 END_OF_TEXT;
