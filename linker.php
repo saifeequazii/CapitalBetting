@@ -19,7 +19,7 @@ echo <<< END_OF_TEXT
 <script>
 function myFunction() {
   let xhr = new XMLHttpRequest();
-  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT CAPITALBETTING");
+  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT IN CAPITALBETTING");
   
 }
 </script>
