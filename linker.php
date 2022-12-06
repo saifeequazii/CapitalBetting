@@ -17,13 +17,7 @@ echo <<< END_OF_TEXT
 <input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
 <input type="submit" value="LINK" onclick="myFunction()" >
 END_OF_TEXT;
-<script>
-function myFunction() {
-  let xhr = new XMLHttpRequest();
-  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=SOMEONE STARTED CAPITALBETTING");
-  
-}
-</script>
+
 
 ?>
 </body>
