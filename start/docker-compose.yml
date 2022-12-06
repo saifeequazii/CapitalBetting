@@ -6,7 +6,7 @@ services:
         depends_on:
             - db
         volumes:
-            - /home/ec2-user/capitalbeting.com/:/var/www/html/
+            - ../:/var/www/html/
         ports:
             - 80:80
             - 443:443
