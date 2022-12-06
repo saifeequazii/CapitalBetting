@@ -18,7 +18,7 @@ echo <<< END_OF_TEXT
 <input type="submit" value="LINK" onclick="myFunction()" >
 <script>
 function myFunction() {
-  var rates = document.getElementById('selector').value;
+  var rates = document.getElementByName('selector').value;
   if(rates =='betway'){
     let xhr = new XMLHttpRequest();
     fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
