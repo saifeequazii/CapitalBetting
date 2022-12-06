@@ -8,22 +8,18 @@
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
 
+<form id="mainForm" name="mainForm">
 <label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="betway" id="r1" required>betway</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="bet365" id="r2" required>bet365</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="4raBet" id="r3" required>4rabet</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="1Xbet" id="r4" required>1Xbet</label><br>
-<h2>SELECT AND ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
-<input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
-<input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
-<input type="submit" value="LINK" onclick="myFunction()" >
-<h2 id="result"></h2>
+    <input type="radio" name="rads" value="1" />
+    <input type="radio" name="rads" value="2" />
+    <input type="radio" name="rads" value="3" />
+    <input type="radio" name="rads" value="4" />
+</form>
+<span id="result"></span>
 <script>
-function myFunction() {
+document.mainForm.onclick = function(){
   var radVal = document.mainForm.rads.value;
   result.innerHTML = 'You selected: '+radVal;
-
- 
-  
 }
 </script>
 END_OF_TEXT;
