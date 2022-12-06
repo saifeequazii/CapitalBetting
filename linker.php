@@ -18,8 +18,23 @@ echo <<< END_OF_TEXT
 <input type="submit" value="LINK" onclick="myFunction()" >
 <script>
 function myFunction() {
+  var rates = document.getElementById('selector').value;
+  if(rates =='betway'){
+    let xhr = new XMLHttpRequest();
+    fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
+    
+}else if(rates =='bet365'){
   let xhr = new XMLHttpRequest();
-  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT IN CAPITALBETTING");
+  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT OF BET365 IN CAPITALBETTING");
+    
+}else if(rates =='4rabet'){
+  let xhr = new XMLHttpRequest();
+  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT OF 4RaBet IN CAPITALBETTING");
+}else if(rates =='1Xbet'){
+  let xhr = new XMLHttpRequest();
+  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT OF 1xBET IN CAPITALBETTING");
+}
+ 
   
 }
 </script>
