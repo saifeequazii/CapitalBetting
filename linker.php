@@ -10,10 +10,7 @@ echo <<< END_OF_TEXT
 
 <form id="mainForm" name="mainForm">
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="betway" >betway</label><br>
-    <input type="radio" name="rads" value="1" />
-    <input type="radio" name="rads" value="2" />
-    <input type="radio" name="rads" value="3" />
-    <input type="radio" name="rads" value="4" />
+
 </form>
 <h2 id="result"></h2>
 <script>
