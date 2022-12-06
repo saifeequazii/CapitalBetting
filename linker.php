@@ -20,11 +20,11 @@ echo <<< END_OF_TEXT
 function myFunction() {
   var selectedOption = $("input:radio[name=selector]:checked").val()
 
+  let xhr = new XMLHttpRequest();
+  fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
+
   if (selectedOption == betway) {
     
-    let xhr = new XMLHttpRequest();
-    fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=LINKED NEW ACCOUNT  OF BETWAY IN CAPITALBETTING");
-  
   }
       
  
