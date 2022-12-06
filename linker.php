@@ -8,19 +8,19 @@
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
 
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="betway" id="r1" required>betway</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="bet365" id="r2" required>bet365</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="4raBet" id="r3" required>4rabet</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="selector" value="1Xbet" id="r4" required>1Xbet</label><br>
 
-<form id="mainForm" name="mainForm">
-<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="betway" >betway</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="4rabet" > 4rabet</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="1xbet" >  1xbet</label><br>
-<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="bet365" >bet365</label><br>
-
-</form>
-<h2 id="result"></h2>
+<span id="result"></span>
 <script>
-document.mainForm.onclick = function(){
+function myFunction() {
   var radVal = document.mainForm.rads.value;
   result.innerHTML = 'You selected: '+radVal;
+
+ 
+  
 }
 </script>
 END_OF_TEXT;
