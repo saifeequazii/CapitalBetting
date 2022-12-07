@@ -7,7 +7,7 @@
 <?php 
 $i = $_POST["username"];
 echo <<< END_OF_TEXT
-
+<h2>SELECT AND ENTER THE USERNAME AND PASSWORD OF YOUR BETTING PLATFORM</h2>
 <form id="mainForm" name="mainForm">
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="betway" >betway</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="4RaBet" >4RaBet</label><br>
@@ -16,7 +16,7 @@ echo <<< END_OF_TEXT
 <input type="text" name="Email" placeholder="EMAIL" style="border-radius: 10px;"  >
 <input type="text" name="password" placeholder="PASSWORD" style="border-radius: 10px;"  >
 <input type="submit" value="LINK">
-<h2>SELECT AND ENTER THE USERNAME AND PASSWORD OF YOUR BETTING PLATFORM</h2>
+
 </form>
 <h2 id="result"></h2>
 <script>
