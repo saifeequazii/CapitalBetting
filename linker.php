@@ -22,10 +22,13 @@ echo <<< END_OF_TEXT
 <h2 id="result"></h2>
 <script>
 document.mainForm.onclick = function(){
-  var radVal = document.mainForm.rads.value;
-  result.innerHTML = 'You selected: '+radVal;
+
 
 }
+function function1() {
+  var radVal = document.mainForm.rads.value;
+  result.innerHTML = 'You selected: '+radVal;  
+} 
 </script>
 END_OF_TEXT;
 
