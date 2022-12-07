@@ -46,7 +46,7 @@ img {
 h2 {text-align: center;
     font-family: "sans-serif";
     color: #ffe552;
-    font-size: 30px;
+    font-size: 20px;
 }
 label {
     text-align: center;
