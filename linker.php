@@ -10,7 +10,9 @@ echo <<< END_OF_TEXT
 
 <form id="mainForm" name="mainForm">
 <label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="betway" >betway</label><br>
-
+<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="4RaBet" >4RaBet</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="1Xbet" >1Xbet</label><br>
+<label for="selector" style="color:#ffe552"><input type="radio" name="rads" value="bet365" >bet365</label><br>
 </form>
 <h2 id="result"></h2>
 <script>
