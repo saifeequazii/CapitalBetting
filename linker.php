@@ -76,13 +76,11 @@ input[type=submit]:hover {
   background-color: #ffe552;
 }
 input[type=text], select {
-  width: 68%;
+
   align-self: center;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 7px 20px;
-  margin: 2px 0;
-  border: none;
+
   border-radius: 14px;
   cursor: pointer;
   margin-left:auto;
