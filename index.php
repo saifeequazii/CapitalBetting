@@ -85,6 +85,7 @@ h1 {
 </form>
 <input type="submit" value="REGISTER" onclick="location.href='register.php'" >
 <input type="submit" name="b1" value="CHECK SERVER STATUS" onclick="location.href='test.php'">
+<input type="submit" name="b1" value="TUTORIAL (HOW TO USE)" onclick="location.href='https://youtu.be/l3KUAl13fOc'">
 <input type="submit" name="b1" value=" WhatsApp us (Live Assessment)"
 onclick="location.href='https://api.whatsapp.com/send?phone=13652500520'">
 <input type="submit" name="b1" value="VIEW LIVE ACTIVITY(TELEGRAM CHANNEL)" onclick="location.href='https://t.me/capitalbetting'">
