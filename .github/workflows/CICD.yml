@@ -23,5 +23,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Scan for vulnerability
+      run: docker run --rm --volume /var/run/docker.sock:/var/run/docker.sock --name Grype anchore/grype:latest saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
     - name: Push
       run: docker push saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
