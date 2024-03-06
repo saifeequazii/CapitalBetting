@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capitalbetting-appd
+spec:
+  selector:
+    matchLabels:
+      app: capitalbetting-appd
+  template:
+    metadata:
+      labels:
+        app: capitalbetting-appd
+    spec:
+      containers:
+      - name: capitalbetting-appd
+        image: dexterquazi/capitalbeting.com
+        livenessProbe:
+          httpGet:
+            path: /index.php
+            port: 80
+          initialDelaySeconds: 90
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /index.php
+            port: 80
+          initialDelaySeconds: 30
+          timeoutSeconds: 10
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
