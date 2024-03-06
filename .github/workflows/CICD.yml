@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Get commit ID
-      run: echo "::set-env name=COMMIT_ID::$(git rev-parse --short HEAD)"
+      run: echo "$(git rev-parse --short HEAD)""
     - name: Build
       run: docker build . --tag saifeequazii/capitalbetting
