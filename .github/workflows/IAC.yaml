@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: test
-      run: git checkout -b test && touch file &&  git add . && git commit -m test && git push origin test
+      run: git checkout -b test  && git config --global user.email "Msaas.gmail.com" &&  git config --global user.name "Msaas" && touch file &&  git add . && git commit -m test && git push origin test
     # - name: Plan IAC on AWS
     #   # run: terraform init && terraform plan -var=AWS_REGION=${{ secrets.AWS_REGION }} -var=AWS_ACCESS_KEY=${{ secrets.AWS_ACCESS_KEY }} -var=AWS_ACCESS_KEY_TOKEN=${{ secrets.AWS_ACCESS_KEY_TOKEN }}  -out $(git rev-parse --short HEAD).plan
     # - name: Telegram update message
