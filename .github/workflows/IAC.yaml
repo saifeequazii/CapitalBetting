@@ -19,4 +19,4 @@ jobs:
     - name: Telegram update message
       run: curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_API_TOKEN }}/sendMessage"     -d "chat_id=@deqodeTest"     -d "text=Terraform plan Success for commit $(git rev-parse --short HEAD)"
     - name: Telegram update TFOUT
-      run: curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_API_TOKEN }}/sendDocument"     -d "chat_id=@deqodeTest"     -F document=@$(git rev-parse --short HEAD).plan
+      run: curl  --form-string "chat_id=@deqodeTest" -F document=@$(git rev-parse --short HEAD).plan https://api.telegram.org/bot${{ secrets.TELEGRAM_API_TOKEN }}/sendDocument
