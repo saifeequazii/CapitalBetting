@@ -16,3 +16,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Plan IAC on AWS
       run: terraform init && terraform plan -var=AWS_REGION=${{ secrets.AWS_REGION }} -var=AWS_ACCESS_KEY=${{ secrets.AWS_ACCESS_KEY }} -var=AWS_ACCESS_KEY_TOKEN=${{ secrets.AWS_ACCESS_KEY_TOKEN }} 
+    - name: Telegram update
+      run: curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_API_TOKEN }}/sendMessage"     -d "chat_id=@deqodeTest"     -d "text=Terraform plan Success for commit $(git rev-parse --short HEAD)"
