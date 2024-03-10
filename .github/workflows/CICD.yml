@@ -37,7 +37,7 @@ jobs:
         aws eks update-kubeconfig --name capitalbetting 
         kubectl get all
         sed "s/TAG/$(git rev-parse --short HEAD)/g" kubernetes/helm/capitalbetting/templates/deployment.yaml >kubernetes/helm/capitalbetting/templates/deployment.yaml
-        helm upgrade capitalbetting kubernetes/helm/capitalbetting --install
+        helm upgrade capitalbetting kubernetes/helm/capitalbetting --install --set image.tag=$(git rev-parse --short HEAD)
         export LB=$(kubectl get svc capitalbetting-appd-service --no-headers=true|awk '{print $4}') && echo $LB
         echo "getid"
         ID=$(curl -X GET "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records?type=CNAME&name=404ops.in" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json" |jq '.result[].id')
