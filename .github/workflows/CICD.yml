@@ -36,7 +36,6 @@ jobs:
         echo "yes"
         aws eks update-kubeconfig --name capitalbetting 
         kubectl get all
-        sed "s/TAG/$(git rev-parse --short HEAD)/g" kubernetes/helm/capitalbetting/templates/deployment.yaml >kubernetes/helm/capitalbetting/templates/deployment.yaml
         echo "start of template"
         helm template  kubernetes/helm/capitalbetting --set image.tag=$(git rev-parse --short HEAD)
         echo "end of template"
