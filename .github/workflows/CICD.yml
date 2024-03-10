@@ -37,9 +37,10 @@ jobs:
         aws eks update-kubeconfig --name capitalbetting 
         kubectl get all
         helm upgrade capitalbetting kubernetes/helm/capitalbetting --install
+        export LB=$(kubectl get svc capitalbetting-appd-service --no-headers=true|awk '{print $4}') && echo $LB
         else
         echo "No Cluster Present Creating Fresh Infra"
         fi
     - name: DNS Update
-      run:  export LB=$(kubectl get svc capitalbetting-appd-service --no-headers=true|awk '{print $4}') && echo $LB
+      run:   echo $LB
       
