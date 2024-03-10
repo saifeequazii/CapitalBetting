@@ -1,4 +1,4 @@
-
+# EKS CLUSTER ROLE
 resource "aws_iam_role" "EKSClusterRole" {
   name = "EKSClusterRole"
   assume_role_policy = jsonencode({
@@ -19,8 +19,8 @@ resource "aws_iam_policy" "eks_cluster_policy" {
   path        = "/"
   description = "My test policy"
 
-  
-  
+  # Terraform's "jsonencode" function converts a
+  # Terraform expression result to valid JSON syntax.
   policy = jsonencode({
   "Version": "2012-10-17",
   "Statement": [
@@ -43,6 +43,7 @@ resource "aws_iam_policy" "eks_cluster_policy" {
         "ec2:DescribeNetworkInterfaces",
         "ec2:DescribeVpcs",
         "ec2:DescribeDhcpOptions",
+        "ec2:DescribeSubnets",
         "kms:DescribeKey"
       ],
       "Resource": "*"
@@ -53,11 +54,27 @@ resource "aws_iam_policy" "eks_cluster_policy" {
 
 //This policy provides Kubernetes the permissions it requires to manage resources on your behalf. Kubernetes requires Ec2:CreateTags permissions to place identifying information on EC2 resources including but not limited to Instances, Security Groups, and Elastic Network Interfaces
 resource "aws_iam_role_policy_attachment" "AmazonEKSClusterPolicy" {
-  policy_arn = aws_iam_policy.eks_cluster_policy.arn
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+  role       = aws_iam_role.EKSClusterRole.name
+}
+# resource "aws_iam_role_policy_attachment" "AmazonEKSClusterPolicy" {
+#   policy_arn = aws_iam_policy.eks_cluster_policy.arn
+#   role       = aws_iam_role.EKSClusterRole.name
+# }
+resource "aws_iam_role_policy_attachment" "AmazonEC2FullAccess" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+  role       = aws_iam_role.EKSClusterRole.name
+}
+resource "aws_iam_role_policy_attachment" "AmazonRoute53FullAccess" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonRoute53FullAccess"
+  role       = aws_iam_role.EKSClusterRole.name
+}
+resource "aws_iam_role_policy_attachment" "AmazonVPCFullAccess" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonVPCFullAccess"
   role       = aws_iam_role.EKSClusterRole.name
 }
 
-
+# NODE GROUP ROLE
 resource "aws_iam_role" "NodeGroupRole" {
   name = "EKSNodeGroupRole"
   assume_role_policy = jsonencode({
@@ -89,5 +106,9 @@ resource "aws_iam_role_policy_attachment" "AmazonEC2ContainerRegistryReadOnly" {
 // This policy provides the Amazon VPC CNI Plugin (amazon-vpc-cni-k8s) the permissions it requires to modify the IP address configuration on your EKS worker nodes. This permission set allows the CNI to list, describe, and modify Elastic Network Interfaces on your behalf
 resource "aws_iam_role_policy_attachment" "AmazonEKS_CNI_Policy" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+  role       = aws_iam_role.NodeGroupRole.name
+}
+resource "aws_iam_role_policy_attachment" "ElasticLoadBalancingFullAccess" {
+  policy_arn = "arn:aws:iam::aws:policy/ElasticLoadBalancingFullAccess"
   role       = aws_iam_role.NodeGroupRole.name
 }
