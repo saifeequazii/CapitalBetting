@@ -36,6 +36,7 @@ jobs:
         echo "yes"
         aws eks update-kubeconfig --name capitalbetting 
         kubectl get all
+        helm upgrade capitalbetting kubernetes/helm/capitalbetting --install
         else
         echo "No Cluster Present Creating Fresh Infra"
         fi
