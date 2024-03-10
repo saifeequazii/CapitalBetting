@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: capitalbetting-appd
-        image: IMAGE_NAME
+        image: saifeequazii/capitalbetting:{{  .Values.image.tag  }}
         livenessProbe:
           httpGet:
             path: /index.php
