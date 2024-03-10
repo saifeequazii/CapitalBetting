@@ -1,0 +1,1 @@
+curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json" --data '{"type":"CNAME","name":"404ops.in","content":"__LB__","ttl":120,"proxied":false}'
