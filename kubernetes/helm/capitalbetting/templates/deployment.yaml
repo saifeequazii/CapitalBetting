@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: capitalbetting-appd
-        image: dexterquazi/capitalbeting.com
+        image: IMAGE_NAME
         livenessProbe:
           httpGet:
             path: /index.php
