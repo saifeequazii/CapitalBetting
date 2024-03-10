@@ -39,8 +39,7 @@ jobs:
         ls && pwd
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git pull origin IAC
         echo "checkout to IAC"
-        git checkout IAC
+        git checkout -b TFSTATE
         echo "branch"
         git branch
