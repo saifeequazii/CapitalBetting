@@ -39,6 +39,8 @@ jobs:
         ls && pwd
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add .
+        git add terraform.tfstate
         git commit -m "(git rev-parse --short HEAD): StateUpdate"
-        git push origin IAC
+        git pull
+        git checkout -b TFSTATE
+        git push origin TFSTATE
