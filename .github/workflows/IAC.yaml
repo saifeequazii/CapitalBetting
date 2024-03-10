@@ -33,15 +33,13 @@ jobs:
     #     rm -rf terraform.tfstate
     #     fi
     - name: Apply Plan
-      run: touch terraform.tfstate
+      run: echo "baigan" > terraform.tfstate
       # run: terraform apply -var=AWS_REGION=${{ secrets.AWS_REGION }} -var=AWS_ACCESS_KEY=${{ secrets.AWS_ACCESS_KEY }} -var=AWS_ACCESS_KEY_TOKEN=${{ secrets.AWS_ACCESS_KEY_TOKEN }}  -auto-approve
     - run: |
         ls && pwd
         git config user.name github-actions
         git config user.email github-actions@github.com
-        echo "checkout to IAC"
         git checkout -b TFSTATE
-        echo "branch"
         git branch
         git add terraform.tfstate
         git commit -m "update"
