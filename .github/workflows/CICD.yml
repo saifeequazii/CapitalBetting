@@ -14,19 +14,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    # - name: Get commit ID
-    #   run: echo "$(git rev-parse --short HEAD)" >tag
-    # - name: Build
-    #   run: docker build . --tag saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
-    # - name: Login to Docker Hub
-    #   uses: docker/login-action@v3
-    #   with:
-    #     username: ${{ secrets.DOCKERHUB_USERNAME }}
-    #     password: ${{ secrets.DOCKERHUB_TOKEN }}
-    # - name: Scan for vulnerability
-    #   run: docker run --rm --volume /var/run/docker.sock:/var/run/docker.sock --name Grype anchore/grype:latest saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
-    # - name: Push
-    #   run: docker push saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
+    - name: Get commit ID
+      run: echo "$(git rev-parse --short HEAD)" >tag
+    - name: Build
+      run: docker build . --tag saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Scan for vulnerability
+      run: docker run --rm --volume /var/run/docker.sock:/var/run/docker.sock --name Grype anchore/grype:latest saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
+    - name: Push
+      run: docker push saifeequazii/capitalbetting:$(git rev-parse --short HEAD)
     -  run:  |
         export AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY }}
         export AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_ACCESS_KEY_TOKEN }}
@@ -36,14 +36,14 @@ jobs:
         echo "yes"
         aws eks update-kubeconfig --name capitalbetting 
         kubectl get all
+        sed "s/TAG/$(git rev-parse --short HEAD)/g" kubernetes/helm/capitalbetting/templates/deployment.yaml >kubernetes/helm/capitalbetting/templates/deployment.yaml
         helm upgrade capitalbetting kubernetes/helm/capitalbetting --install
         export LB=$(kubectl get svc capitalbetting-appd-service --no-headers=true|awk '{print $4}') && echo $LB
         echo "getid"
         ID=$(curl -X GET "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records?type=CNAME&name=404ops.in" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json" |jq '.result[].id')
         echo "$ID delete id"
         ID=$(echo $ID|sed 's/"//g')
-        curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records/$ID" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json"
-        
+        curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records/$ID" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json"        
         curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json" --data '{"type":"CNAME","name":"404ops.in","content":"'"$LB"'","ttl":120,"proxied":false}'
         else
         echo "No Cluster Present Creating Fresh Infra"
