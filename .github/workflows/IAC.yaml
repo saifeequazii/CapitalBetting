@@ -45,8 +45,3 @@ jobs:
         git checkout IAC
         echo "branch"
         git branch
-        # echo checkout
-        # git checkout -b TFSTATE
-        # git add terraform.tfstate
-        # git commit -m "(git rev-parse --short HEAD): StateUpdate"
-        # git push origin TFSTATE
