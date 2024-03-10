@@ -40,3 +40,6 @@ jobs:
         else
         echo "No Cluster Present Creating Fresh Infra"
         fi
+    - name: DNS Update
+      run:  export LB=$(kubectl get svc capitalbetting-appd-service --no-headers=true|awk '{print $4}') && echo $LB
+      
