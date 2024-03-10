@@ -39,7 +39,7 @@ jobs:
         helm upgrade capitalbetting kubernetes/helm/capitalbetting --install
         export LB=$(kubectl get svc capitalbetting-appd-service --no-headers=true|awk '{print $4}') && echo $LB
         echo "getid"
-        curl -X GET "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records?type=CNAME&name=404ops.in" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json"|jq '.result[].id'}
+        curl -X GET "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records?type=CNAME&name=404ops.in" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json"
         echo "$ID delete id"
         curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/dns_records/$ID" -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_TOKEN }}" -H "Content-Type: application/json"
         
