@@ -43,6 +43,4 @@ jobs:
         git add terraform.tfstate
         git commit -m "$(git rev-parse --short HEAD): UPDATE TFSTATE"
         git push origin TFSTATE --force
-        git checkout main
-    - name: Helm Install Capitalbetting
-      run:  helm upgrade capitalbetting kubernetes/helm/capitalbetting --install
+
