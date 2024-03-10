@@ -33,7 +33,7 @@ jobs:
     #     rm -rf terraform.tfstate
     #     fi
     - name: Apply Plan
-      run: echo "baigan" > terraform.tfstate
+      run: echo "lassan" > terraform.tfstate
       # run: terraform apply -var=AWS_REGION=${{ secrets.AWS_REGION }} -var=AWS_ACCESS_KEY=${{ secrets.AWS_ACCESS_KEY }} -var=AWS_ACCESS_KEY_TOKEN=${{ secrets.AWS_ACCESS_KEY_TOKEN }}  -auto-approve
     - run: |
         ls && pwd
@@ -42,5 +42,5 @@ jobs:
         git checkout -b TFSTATE
         git branch
         git add terraform.tfstate
-        git commit -m "update"
+        git commit -m "$(git rev-parse --short HEAD): UPDATE TFSTATE"
         git push origin TFSTATE --force
