@@ -35,6 +35,7 @@ jobs:
         then
         echo "yes"
         aws eks update-kubeconfig --name capitalbetting 
+        kubectl get all
         else
         echo "No Cluster Present Creating Fresh Infra"
         fi
