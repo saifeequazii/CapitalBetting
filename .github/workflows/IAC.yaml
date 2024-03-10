@@ -33,7 +33,7 @@ jobs:
         rm -rf terraform.tfstate
         fi
     - name: Update TF_STATE
-      run: curl https://github.com/saifeequazii/CapitalBetting/blob/TFSTATE/terraform.tfstate > terraform.tfstate 
+      run: curl https://raw.githubusercontent.com/saifeequazii/CapitalBetting/TFSTATE/terraform.tfstate >terraform.tfstate
     - name: Apply Plan
       # run: echo "lassan" > terraform.tfstate
       run: terraform apply -var=AWS_REGION=${{ secrets.AWS_REGION }} -var=AWS_ACCESS_KEY=${{ secrets.AWS_ACCESS_KEY }} -var=AWS_ACCESS_KEY_TOKEN=${{ secrets.AWS_ACCESS_KEY_TOKEN }}  -auto-approve -lock=false
